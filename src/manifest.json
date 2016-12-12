@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+
+    "name": "Debugger API",
+    "description": "Attach to Chrome's debugger api",
+    "version": "0.1",
+
+    "background": {
+        "scripts": ["scripts.js"]
+    },
+
+	"icons": {
+		"128": "dbg-128.png"
+	},
+
+    "commands": {
+        "attach-debugger": {
+            "suggested_key": {
+                "default": "Alt+Shift+D"
+            },
+            "description": "Attach"
+        }
+    },
+
+    "permissions": [
+        "tabs",
+        "debugger"
+    ]
+}
